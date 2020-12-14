@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>Verificando Nacionalidade</h1>
+    <p>Onde você nasceu?</p>
+    <input type="text" name="txtp" id="txtp">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="cond">
+
+    </div>
+    <script>
+        function verificar() {
+            var p1 = window.document.getElementById('txtp')
+            var v1 = window.document.getElementById('cond')
+            v.innerHTML = `<p>Você nasceu no <strong>${p1}</strong></p>`
+            if (p1 == 'Brasil') {
+                v1.innerHTML += `<p>Então você é <strong>Brasileiro</strong>.</p>`
+            } else {
+                v1.innerHTML += `<p>Então você é <strong>estrangeiro</strong>.</p>`
+            }
+        }
+    </script>
+</body>
+</html>
